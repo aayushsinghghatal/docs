@@ -28,8 +28,9 @@
             "group": "Introduction to AI",
             "pages": [
               "aifundamentals/introduction",
-              "aifundamentals/introductiontoai/typesofai",
-              "aifundamentals/introductiontoai/aitechnologyhierarchy"
+              "aifundamentals/introductiontoai/introductiontoai1",
+              "aifundamentals/introductiontoai/introductiontoai2",
+              "aifundamentals/introductiontoai/introductiontoai3"
             ]
           }
         ]
