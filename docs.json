@@ -22,12 +22,12 @@
         ]
       },
       {
-        "tab": "LearnML",
+        "tab": "AI Fundamentals",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Introduction to Artificial Intelligence",
             "pages": [
-              "learnml/introduction"
+              "aifundamentals/introduction"
             ]
           },
           {
