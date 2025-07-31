@@ -25,18 +25,10 @@
         "tab": "AI Fundamentals",
         "groups": [
           {
-            "group": "Introduction to Artificial Intelligence",
+            "group": "Introduction to AI",
             "pages": [
-              "aifundamentals/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "aifundamentals/introduction",
+              "aifundamentals/introductiontoai/TypesofAIbyCapability"
             ]
           }
         ]
