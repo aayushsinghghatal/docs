@@ -120,5 +120,10 @@
       "article:tag": "education, documentation, learning, tutorials",
       "google-site-verification": "yDS4Jm4BYKwXpYwobqeDZz8JRyzlnV4dGrx781Ycumw"
     }
+  },
+  "integrations": {
+    "ga4": {
+        "measurementId": "G-KPSSPNN9TH"
+    }
   }
 }
