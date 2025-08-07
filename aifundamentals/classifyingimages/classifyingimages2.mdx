@@ -1,0 +1,46 @@
+---
+title: "Generative Adversarial Network"
+description: "A Generative Adversarial Network (GAN) is a type of machine learning model that can create new, realistic data — such as images, music, or text — that didn't exist before."
+---
+
+## How Does GAN Work?
+
+GANs consist of **two key parts**:
+
+### The Generator (The Artist)
+
+The Generator’s job is to **create fake data** — like a photo of a person who doesn’t actually exist. It starts by making completely random images. Over time, as it gets feedback from the Discriminator, it learns to make better and more realistic data.
+
+### The Discriminator (The Detective)
+
+The Discriminator’s job is to **spot the fake**. It looks at real data (like actual photos of people) and fake data from the Generator, and tries to guess which is which. It gives feedback to the Generator, telling it how believable its creations are.
+
+## The GAN Game
+
+The Generator and Discriminator are trained together. It’s like a game:
+
+- The Generator **tries to fool** the Discriminator.
+- The Discriminator **tries not to be fooled**.
+
+As this process repeats over thousands of rounds:
+
+- The Generator gets **better at creating realistic data**.
+- The Discriminator gets **better at detecting fakes**.
+
+Eventually, the Generator’s work becomes so good that even the Discriminator struggles to tell the difference.
+
+## What Can GANs Be Used For?
+
+GANs have many powerful and creative applications:
+
+| Application                     | Description                                                                                                      |
+| :------------------------------ | :--------------------------------------------------------------------------------------------------------------- |
+| 🧑‍🎨 **AI Art Generation**     | Turn sketches into artwork or create art from scratch                                                            |
+| 😎 **Fake Faces**               | Generate faces of people who don’t exist (e.g., [ThisPersonDoesNotExist.com](http://ThisPersonDoesNotExist.com)) |
+| 🎥 **Deepfakes**                | Replace someone’s face in a video with another                                                                   |
+| 📸 **Photo Restoration**        | Fix blurry or damaged old photos                                                                                 |
+| 🏥 **Medical Imaging**          | Generate sample medical images for training AI models                                                            |
+| 🎮 **Game Content**             | Automatically generate characters, environments, or textures                                                     |
+| 🎶 **Music & Voice Generation** | Create new music tracks or mimic voices                                                                          |
+
+---
