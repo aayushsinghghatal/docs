@@ -61,7 +61,7 @@
       },
       {
         "tab" : "Python",
-        "grouups": [
+        "groups": [
           {
             "group": "Classifying Images",
             "tag": "NEW",
