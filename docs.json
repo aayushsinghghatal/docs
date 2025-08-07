@@ -58,6 +58,20 @@
             ]
           }
         ]
+      },
+      {
+        "tab" : "Python",
+        "grouups": [
+          {
+            "group": "Classifying Images",
+            "tag": "NEW",
+            "pages": [
+              "aifundamentals/classifyingimages/classifyingimages1",
+              "aifundamentals/classifyingimages/classifyingimages2",
+              "aifundamentals/classifyingimages/classifyingimages3"
+            ]
+          }
+        ]
       }
     ]
   },
