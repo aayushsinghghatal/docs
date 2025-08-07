@@ -7,14 +7,51 @@ description: "Natural Language Processing (NLP) is a branch of Artificial Intell
 
 The primary purpose of NLP is to transform unstructured textual data into structured, actionable insights. It plays a vital role in enabling seamless human-computer interaction through natural language and in automating language-driven processes in business, healthcare, customer support, and more. NLP allows machines to extract key information, understand intent, analyze sentiment, and respond in ways that mimic human communication.
 
-## Key NLP Concepts
+## Text Processing Fundamentals
 
-### Text Processing Fundamentals
+Human language is full of **grammar rules**, **ambiguity**, and **context**. Computers need to **break it down into smaller parts** to process it meaningfully.
 
-Before any advanced NLP task can be performed, text must be preprocessed and cleaned.
+### Segmentation
 
-- **Sentence Segmentation**: The process of dividing text into individual sentences. This is an essential first step for tasks like summarization or sentiment analysis.
-- **Tokenization**: Breaking a sentence or paragraph into individual units called _tokens_ (e.g., words, phrases, punctuation). Tokens serve as the base input for all downstream NLP tasks.
-- **Text Normalization**: Standardizing the text by converting it to lowercase, removing punctuation, and correcting misspellings. This ensures consistency across data.
-- **Language Detection**: Identifying the language of the input text to route it through the correct processing pipeline.
-- **Encoding**: Converting text into numerical representations (e.g., word embeddings, one-hot vectors) so that machines can analyze and process it.
+Segmentation helps us **divide raw text into manageable pieces**.
+
+#### Reasons:
+
+- Helps detect where **one idea ends and another begins** (e.g., sentence boundaries).
+- Essential for tasks like **translation, summarization, and voice recognition**.
+- Makes **processing easier** by breaking long texts into smaller chunks.
+
+#### Example:
+
+Without segmentation:
+
+> “Hi how are you I’m fine thanks”
+
+With segmentation:
+
+> [“Hi, how are you?”, “I’m fine, thanks.”]
+
+### Tokens
+
+#### Reasons:
+
+- Words (tokens) are the **basic units of meaning** that NLP models work with.
+- Helps in converting text into **numbers or vectors** (like in ML models).
+- Needed for **search engines, chatbots, translations**, and more.
+
+#### Example:
+
+Without tokenization:
+
+> “Iamhungry”
+
+With tokenization:
+
+> [“I”, “am”, “hungry”]
+
+### Real Challenges in NLP Tokenization
+
+- **Ambiguity**:
+  - “Let’s eat, grandma\!” vs “Let’s eat grandma\!” → one punctuation changes everything.
+- **Multi-word expressions**:
+  - "New York" should be one token, not two separate words.

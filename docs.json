@@ -41,7 +41,11 @@
             "group": "Natural Language Processing",
             "tag": "NEW",
             "pages": [
-              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing1"
+              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing1",
+              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing2",
+              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing3",
+              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing4",
+              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing5"
             ]
           }
         ]
