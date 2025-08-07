@@ -47,6 +47,13 @@
               "aifundamentals/naturallanguageprocessing/naturallanguageprocessing4",
               "aifundamentals/naturallanguageprocessing/naturallanguageprocessing5"
             ]
+          },
+          {
+            "group": "Classifying Images",
+            "tag": "NEW",
+            "pages": [
+              "aifundamentals/classifyingimages/classifyingimages1"
+            ]
           }
         ]
       }
