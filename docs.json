@@ -36,6 +36,13 @@
               "aifundamentals/introductiontoai/introductiontoai4",
               "aifundamentals/introductiontoai/introductiontoai5"
             ]
+          },
+          {
+            "group": "Natural Language Processing",
+            "tag": "NEW",
+            "pages": [
+              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing1"
+            ]
           }
         ]
       }
@@ -70,48 +77,35 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
-  }
-"seo": {
+  },
+  "seo": {
     "metatags": {
-      // Essential Meta Tags
       "charset": "UTF-8",
       "viewport": "width=device-width, initial-scale=1.0",
       "description": "Comprehensive educational documentation and tutorials for AI, Machine Learning, Electronics Engineering. Learn the basics and fundamentals.",
       "keywords": "education, documentation, learning, artificial intelligence, machine learning, python programming, data science, fpga tutorial, verilog programming, ai tutorial, deep learning, hardware design, python for beginners, programming education, digital design",
       "author": "Ayush Singh Ghatal",
       "language": "en",
-      
-      // Search Engine Directives
       "robots": "index, follow",
       "googlebot": "index, follow",
-      
-      // Core SEO Meta Tags
-      "theme-color": "#2563eb", // Adjust to your brand color
+      "theme-color": "#2563eb",
       "color-scheme": "light dark",
-      
-      // Open Graph (Facebook, LinkedIn, etc.)
       "og:title": "Your Educational Documentation Hub",
       "og:type": "website",
       "og:url": "https://ayushsinghghatal.mintlify.app",
-      "og:image": "https://ayushsinghghatal.mintlify.app/favicon.jpg", // 1200x630px recommended
+      "og:image": "https://ayushsinghghatal.mintlify.app/favicon.jpg",
       "og:description": "Master artificial intelligence, machine learning, python programming, fpga, digital design with our comprehensive documentation, tutorials, and learning resources.",
       "og:site_name": "ayushsinghghatal",
       "og:locale": "en_US",
-      
-      // Mobile Optimization
       "HandheldFriendly": "True",
       "MobileOptimized": "320",
       "apple-mobile-web-app-capable": "yes",
       "apple-mobile-web-app-status-bar-style": "default",
       "apple-mobile-web-app-title": "ayushsinghghatal",
-      
-      // Educational Content Specific
       "article:author": "Ayush Singh Ghatal",
       "article:section": "Education",
       "article:tag": "education, documentation, learning, tutorials",
-      
-      // Optional: If you have verification tokens
-      "google-site-verification": "yDS4Jm4BYKwXpYwobqeDZz8JRyzlnV4dGrx781Ycumw",
+      "google-site-verification": "yDS4Jm4BYKwXpYwobqeDZz8JRyzlnV4dGrx781Ycumw"
     }
   }
 }
