@@ -28,39 +28,15 @@
         "groups": [
           {
             "group": "Introduction to AI",
-            "pages": [
-              "aifundamentals/introduction",
-              "aifundamentals/introductiontoai/introductiontoai1",
-              "aifundamentals/introductiontoai/introductiontoai2",
-              "aifundamentals/introductiontoai/introductiontoai3",
-              "aifundamentals/introductiontoai/introductiontoai4",
-              "aifundamentals/introductiontoai/introductiontoai5"
-            ]
-          },
-          {
-            "group": "Natural Language Processing",
             "tag": "NEW",
             "pages": [
-              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing1",
-              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing2",
-              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing3",
-              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing4",
-              "aifundamentals/naturallanguageprocessing/naturallanguageprocessing5"
-            ]
-          },
-          {
-            "group": "Classifying Images",
-            "tag": "NEW",
-            "pages": [
-              "aifundamentals/classifyingimages/classifyingimages1",
-              "aifundamentals/classifyingimages/classifyingimages2",
-              "aifundamentals/classifyingimages/classifyingimages3"
+              "aifundamentals/module1/page1"
             ]
           }
         ]
       },
       {
-        "tab" : "Python",
+        "tab": "Python",
         "groups": [
           {
             "group": "Classifying Images",
@@ -86,15 +62,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
@@ -135,10 +111,10 @@
   },
   "integrations": {
     "ga4": {
-        "measurementId": "G-FR6KD9L3YW"
+      "measurementId": "G-FR6KD9L3YW"
     },
     "gtm": {
-        "tagId": "GTM-KNGGHPDQ"
+      "tagId": "GTM-KNGGHPDQ"
     }
   }
 }
