@@ -2,7 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Docs",
-  "description": "Free comprehensive learning guides on AI, machine learning, and electronics engineering. Student-friendly tutorials, notes, and practical examples for beginners.",
+  "description": "Free comprehensive learning guides on AI and machine learning. Student-friendly notes, and practical examples for beginners.",
   "indexing": "all",
   "colors": {
     "primary": "#16A34A",
@@ -63,14 +63,9 @@
   },
   "contextual": {
     "options": [
-      "copy",
-      "view",
       "chatgpt",
       "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "perplexity"
     ]
   },
   "footer": {
@@ -84,8 +79,8 @@
     "metatags": {
       "charset": "UTF-8",
       "viewport": "width=device-width, initial-scale=1.0",
-      "description": "Comprehensive educational documentation and tutorials for AI, Machine Learning, Electronics Engineering. Learn the basics and fundamentals.",
-      "keywords": "education, documentation, learning, artificial intelligence, machine learning, python programming, data science, fpga tutorial, verilog programming, ai tutorial, deep learning, hardware design, python for beginners, programming education, digital design",
+      "description": "Comprehensive educational documentation and tutorials for AI, Machine Learning. Learn the basics and fundamentals.",
+      "keywords": "education, documentation, learning, artificial intelligence, machine learning, python programming, ai tutorial, deep learning, python for beginners, programming education",
       "author": "Ayush Singh Ghatal",
       "language": "en",
       "robots": "index, follow",
@@ -96,7 +91,7 @@
       "og:type": "website",
       "og:url": "https://ayushsinghghatal.mintlify.app",
       "og:image": "https://ayushsinghghatal.mintlify.app/favicon.jpg",
-      "og:description": "Master artificial intelligence, machine learning, python programming, fpga, digital design with our comprehensive documentation, tutorials, and learning resources.",
+      "og:description": "Master artificial intelligence, machine learning, python programming with our comprehensive documentation, tutorials, and learning resources.",
       "og:site_name": "ayushsinghghatal",
       "og:locale": "en_US",
       "HandheldFriendly": "True",
