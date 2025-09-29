@@ -33,6 +33,12 @@
               "aifundamentals/module1/page2",
               "aifundamentals/module1/page3"
             ]
+          },
+          {
+            "group": "Core Concepts of ML",
+            "pages": [
+              "aifundamentals/module2/page1"
+            ]
           }
         ]
       },
