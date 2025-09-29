@@ -1,261 +1,71 @@
 ---
-title: "What is Machine Learning?"
+title: "Types of Artificial Intelligence"
 ---
 
-In the previous module, we learned that Machine Learning (ML) is a _subset_ of Artificial Intelligence. It's not just a part of AI; it's the engine that powers most of the AI advancements we see today. So, what exactly is it?
+Not all AI is created equal. To understand the landscape of AI, it helps to categorize it based on what it's capable of and how it functions. We can break this down into two main classification systems.
 
-### The Core Idea: Learning From Data
+### Classification 1: Based on Capability (The "Power Level")
 
-The traditional way to make a computer do something is to give it explicit, step-by-step instructions. This is called **explicit programming**. For example, to write a program that calculates a 10% discount, you would write a rule like this: `final_price = original_price * 0.90`. The program can't do anything else; it just follows the rule you wrote.
+This is the most common way to think about AI, categorizing it by its level of intelligence, from highly specialized to vastly superhuman. Think of it like the evolution of a species or leveling up in a video game.
 
-**Machine Learning flips this on its head.**
+_Drawing Suggestion 1:_ _Draw three simple robot icons in a row, getting progressively more complex and "smarter" looking. Label them ANI, AGI, and ASI._
 
-Instead of giving the computer rules, you give it **data**. The ML algorithm then processes this data and "learns" the patterns and rules on its own.
+#### 1. Artificial Narrow Intelligence (ANI)
 
-Arthur Samuel, an AI pioneer, defined it perfectly back in 1959: Machine Learning is the field of study that gives computers the ability to **learn without being explicitly programmed.**
+Also known as "Weak AI," this is the **only type of AI that exists today.**
 
-**Analogy: Learning to Identify Animals**
+- **What it is:** ANI is an AI that is specialized for **one specific task**. It can be incredibly powerful at that single task, often exceeding human ability, but it cannot operate outside of its narrow programming.
+- **Think about:**
+  - Your phone's facial recognition. It's brilliant at identifying your face but can't use that knowledge to drive a car.
+  - A GPS navigation system. It's a genius at finding the best route but can't write an email.
+  - **AlphaGo**, the AI that defeated the world's best Go player. It's the undisputed champion of Go, but you can't ask it for the weather forecast.
 
-- **Explicit Programming:** You could try to write a set of rules for a computer to identify a cat: "If it has pointy ears, AND whiskers, AND a long tail, AND fur... then it's a cat." This is brittle and will fail quickly. What about a cat with folded ears or no tail?
-- **Machine Learning:** You show the computer **thousands of pictures labeled "cat"** and **thousands of pictures labeled "not a cat."** The algorithm analyzes all these examples and learns the underlying patterns of what makes a cat a cat on its own. After this "training," it can accurately identify cats in new pictures it has never seen before. It learned the "rules" from the data, rather than being handed them.
+#### 2. Artificial General Intelligence (AGI)
 
-### The Typical Machine Learning Workflow
+Also known as "Strong AI" or "Human-Level AI," this is the next major milestone for the field.
 
-While there are many different types of ML models, most projects follow a similar high-level process. Understanding this workflow is key to understanding how ML is applied in the real world.
+- **What it is:** AGI is an AI with the ability to understand, learn, and apply its intelligence to solve **any problem a human being can.** It would possess abstract thinking, background knowledge, and common sense.
+- **Think about:** This is the type of AI you see in science fiction, like Data from _Star Trek_ or the helpful droids in _Star Wars_. It's a machine with the generalized cognitive abilities of a human, not tied to a single task.
+- **Current Status:** AGI does **not** yet exist. It is the primary goal for many AI researchers, but creating it is an incredibly complex challenge.
 
-# The Typical Machine Learning Workflow
+#### 3. Artificial Superintelligence (ASI)
 
-While there are many different types of ML models, most projects follow a similar high-level process...
+This is the final, theoretical stage of AI development.
 
-<div className="my-8">
-  <MLWorkflowComponent />
-</div>
+- **What it is:** ASI is an intellect that is much smarter than the best human minds in virtually every field, including scientific creativity, general wisdom, and social skills.
+- **Think about:** An ASI wouldn't just be a faster thinker; it would be a _better_ thinker, capable of making discoveries and inventions far beyond our comprehension. Its rise would be one of the most transformative events in human history.
+- **Current Status:** ASI is purely **hypothetical**.
 
-export function MLWorkflowComponent() {
-  const [activeStep, setActiveStep] = React.useState(null);
-  const [showTips, setShowTips] = React.useState(false);
-  
-  // ... rest of the component code here ...
-  
-  return (
-    <div className="not-prose bg-white dark:bg-zinc-950">
-      {import React, { useState } from 'react';
-import { Database, Sparkles, Brain, CheckCircle, Rocket, ChevronRight, Info, TrendingUp } from 'lucide-react';
+### Classification 2: Based on Functionality (The "How it Thinks" Model)
 
-export default function MLWorkflow() {
-  const [activeStep, setActiveStep] = useState(null);
-  const [showTips, setShowTips] = useState(false);
+This system categorizes AI based on its ability to perceive the world and use that information.
 
-  const steps = [
-    {
-      id: 1,
-      title: "Data Collection",
-      icon: Database,
-      color: "from-blue-500 to-blue-600",
-      description: "This is the foundation of any ML project. You need to gather large amounts of relevant, high-quality data.",
-      details: "The data could be anything from spreadsheets and images to text and sensor readings. The quality and quantity of this data will directly impact the performance of your model.",
-      examples: ["Customer purchase history", "Medical imaging scans", "Social media posts", "Sensor readings from IoT devices"],
-      timeEstimate: "1-4 weeks"
-    },
-    {
-      id: 2,
-      title: "Data Preparation",
-      icon: Sparkles,
-      color: "from-purple-500 to-purple-600",
-      description: "Raw data is almost never ready to be used. This is often the most time-consuming step.",
-      details: "Cleaning: Fixing errors, handling missing values. Formatting: Ensuring the data is in a consistent and usable format. Splitting: Dividing the data into a 'training set' and a 'testing set'.",
-      examples: ["Removing duplicate entries", "Handling missing values", "Normalizing data scales", "Encoding categorical variables"],
-      timeEstimate: "2-8 weeks"
-    },
-    {
-      id: 3,
-      title: "Model Training",
-      icon: Brain,
-      color: "from-pink-500 to-pink-600",
-      description: "This is where the 'learning' happens. You select an appropriate ML algorithm and feed it your prepared training data.",
-      details: "The algorithm processes the data, adjusts its internal parameters, and creates a 'model'—a mathematical representation of the patterns it found.",
-      examples: ["Neural networks", "Decision trees", "Support vector machines", "Random forests"],
-      timeEstimate: "Hours to days"
-    },
-    {
-      id: 4,
-      title: "Evaluation",
-      icon: CheckCircle,
-      color: "from-green-500 to-green-600",
-      description: "Once the model is trained, you need to see how well it works using the testing set.",
-      details: "This step answers: 'Did the model actually learn the right things, and can it make accurate predictions on new data?'",
-      examples: ["Accuracy metrics", "Precision and recall", "Confusion matrix", "Cross-validation"],
-      timeEstimate: "1-3 days"
-    },
-    {
-      id: 5,
-      title: "Deployment & Monitoring",
-      icon: Rocket,
-      color: "from-orange-500 to-orange-600",
-      description: "If the model's performance is good, it's ready to be put into a real-world application.",
-      details: "You need to continuously monitor the model's performance to ensure it remains accurate over time as new data comes in.",
-      examples: ["API integration", "Real-time predictions", "Performance dashboards", "A/B testing"],
-      timeEstimate: "Ongoing"
-    }
-  ];
+_Drawing Suggestion 2:_ _Create a simple flowchart showing four boxes in a sequence, connected by arrows: [Reactive] -\> [Limited Memory] -\> [Theory of Mind] -\> [Self-Awareness]._
 
-  const tips = [
-    "Data quality matters more than quantity—garbage in, garbage out!",
-    "Spend 80% of your time on data preparation; it's the most crucial step.",
-    "Always keep a separate test set that the model never sees during training.",
-    "Monitor for 'model drift'—when performance degrades over time.",
-    "Start simple before trying complex models."
-  ];
+#### 1. Reactive Machines
 
-  return (
-    <div className="not-prose bg-white dark:bg-zinc-950">
-      <div className="max-w-5xl mx-auto px-4 py-8">
-        {/* Header */}
-        <div className="mb-10">
-          <h1 className="text-4xl font-bold text-zinc-900 dark:text-zinc-100 mb-3">
-            The Machine Learning Workflow
-          </h1>
-          <p className="text-lg text-zinc-600 dark:text-zinc-400">
-            Understanding the step-by-step process of building and deploying ML models
-          </p>
-        </div>
+This is the most basic form of AI.
 
-        {/* Tips Toggle */}
-        <div className="mb-6">
-          <button
-            onClick={() => setShowTips(!showTips)}
-            className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-zinc-100 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 text-zinc-900 dark:text-zinc-100 border border-zinc-200 dark:border-zinc-800 transition-colors"
-          >
-            <Info size={16} />
-            <span>{showTips ? 'Hide' : 'Show'} Pro Tips</span>
-          </button>
-        </div>
+- **How it works:** It perceives the world directly and acts on what it sees. It doesn't have a memory of the past, so it can't use past experiences to inform current decisions. It performs the same way every time it encounters the same situation.
+- **Example:** **IBM's Deep Blue**, the chess computer that beat Garry Kasparov. Deep Blue could identify the pieces on the board and calculate the best possible move from all the options, but it didn't "remember" any moves from past games. Its strategy was purely based on the present moment.
 
-        {/* Tips Section */}
-        {showTips && (
-          <div className="mb-8 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/50 rounded-lg p-5">
-            <h3 className="text-base font-semibold text-blue-900 dark:text-blue-100 mb-3 flex items-center gap-2">
-              <TrendingUp size={18} />
-              Professional Tips
-            </h3>
-            <ul className="space-y-2 text-sm">
-              {tips.map((tip, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-zinc-700 dark:text-zinc-300">
-                  <span className="text-blue-500 dark:text-blue-400 font-bold mt-0.5">•</span>
-                  <span>{tip}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+#### 2. Limited Memory
 
-        {/* Workflow Steps */}
-        <div className="space-y-3">
-          {steps.map((step, idx) => {
-            const Icon = step.icon;
-            const isActive = activeStep === step.id;
-            
-            return (
-              <div key={step.id}>
-                <div
-                  onClick={() => setActiveStep(isActive ? null : step.id)}
-                  className={`bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-lg p-5 cursor-pointer transition-all hover:border-zinc-300 dark:hover:border-zinc-700 ${
-                    isActive ? 'ring-2 ring-primary dark:ring-primary/50' : ''
-                  }`}
-                >
-                  <div className="flex items-center gap-4">
-                    {/* Step Number & Icon */}
-                    <div className={`bg-gradient-to-br ${step.color} w-14 h-14 rounded-lg flex items-center justify-center flex-shrink-0 shadow-sm`}>
-                      <Icon size={28} className="text-white" />
-                    </div>
+This is where most of today's AI applications are.
 
-                    {/* Content */}
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center gap-2 mb-1">
-                        <span className="text-xs font-semibold text-zinc-500 dark:text-zinc-400">
-                          STEP {step.id}
-                        </span>
-                        <span className="text-xs bg-zinc-100 dark:bg-zinc-800 px-2 py-0.5 rounded text-zinc-600 dark:text-zinc-400">
-                          ⏱️ {step.timeEstimate}
-                        </span>
-                      </div>
-                      <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 mb-1">
-                        {step.title}
-                      </h2>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                        {step.description}
-                      </p>
-                    </div>
+- **How it works:** This AI can store past data and predictions for a short period. It uses this recent past to inform its decisions in the immediate future. The "memory" is not saved into a library of experiences that it can learn from later.
+- **Example:** A **self-driving car**. It observes the speed and direction of other cars, reads lane markings, and tracks traffic lights. This information about the recent past is critical for deciding when to change lanes or brake. Once the car has moved on, that specific memory is no longer needed.
 
-                    {/* Arrow */}
-                    <ChevronRight
-                      size={20}
-                      className={`text-zinc-400 dark:text-zinc-600 transition-transform flex-shrink-0 ${
-                        isActive ? 'rotate-90' : ''
-                      }`}
-                    />
-                  </div>
+#### 3. Theory of Mind (Future Goal)
 
-                  {/* Expanded Details */}
-                  {isActive && (
-                    <div className="mt-5 pt-5 border-t border-zinc-200 dark:border-zinc-800">
-                      <div className="grid md:grid-cols-2 gap-5">
-                        <div>
-                          <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
-                            Details:
-                          </h4>
-                          <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                            {step.details}
-                          </p>
-                        </div>
-                        <div>
-                          <h4 className="text-sm font-semibold text-zinc-900 dark:text-zinc-100 mb-2">
-                            Examples:
-                          </h4>
-                          <ul className="space-y-1.5">
-                            {step.examples.map((example, i) => (
-                              <li key={i} className="flex items-start gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-                                <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-br ${step.color} mt-1.5 flex-shrink-0`}></span>
-                                <span>{example}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
+This is the next level of AI systems that researchers are working on.
 
-                {/* Connector Arrow */}
-                {idx < steps.length - 1 && (
-                  <div className="flex justify-center py-2">
-                    <ChevronRight
-                      size={24}
-                      className="text-zinc-300 dark:text-zinc-700 transform rotate-90"
-                    />
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
+- **How it would work:** This AI would have social intelligence. It could understand that people, creatures, and objects in the world have thoughts, feelings, and intentions that affect their own behavior.
+- **Example:** A truly helpful home assistant robot would need to understand _why_ you're asking for something. It would need to interpret your tone of voice and facial expressions to grasp your emotional state and intentions.
 
-        {/* Footer Info */}
-        <div className="mt-10 bg-gradient-to-br from-zinc-900 to-zinc-800 dark:from-zinc-950 dark:to-zinc-900 rounded-lg p-6 border border-zinc-700 dark:border-zinc-800">
-          <h3 className="text-lg font-semibold mb-2 text-white">
-            Key Takeaway
-          </h3>
-          <p className="text-zinc-300 dark:text-zinc-400 leading-relaxed text-sm">
-            While there are many different types of ML models, most projects follow this similar 
-            high-level process. Understanding this workflow is key to understanding how ML is 
-            applied in the real world. Remember: it's iterative—you often need to go back and 
-            refine earlier steps based on what you learn in later ones!
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-}}
-    </div>
-  );
-}
+#### 4. Self-Awareness (Hypothetical)
+
+This is the final stage of AI development and the stuff of science fiction.
+
+- **How it would work:** An AI that has achieved this stage would have its own consciousness, a sense of self, and an awareness of its own internal state. It would be a sentient being.
+- **Example:** Fictional characters like Skynet from _The Terminator_ or HAL 9000 from _2001: A Space Odyssey_ represent this idea of a self-aware, conscious AI. This is a purely theoretical concept for now.
