@@ -23,7 +23,23 @@ Arthur Samuel, an AI pioneer, defined it perfectly back in 1959: Machine Learnin
 
 While there are many different types of ML models, most projects follow a similar high-level process. Understanding this workflow is key to understanding how ML is applied in the real world.
 
-import React, { useState } from 'react';
+# The Typical Machine Learning Workflow
+
+While there are many different types of ML models, most projects follow a similar high-level process...
+
+<div className="my-8">
+  <MLWorkflowComponent />
+</div>
+
+export function MLWorkflowComponent() {
+  const [activeStep, setActiveStep] = React.useState(null);
+  const [showTips, setShowTips] = React.useState(false);
+  
+  // ... rest of the component code here ...
+  
+  return (
+    <div className="not-prose bg-white dark:bg-zinc-950">
+      {import React, { useState } from 'react';
 import { Database, Sparkles, Brain, CheckCircle, Rocket, ChevronRight, Info, TrendingUp } from 'lucide-react';
 
 export default function MLWorkflow() {
@@ -239,5 +255,7 @@ export default function MLWorkflow() {
       </div>
     </div>
   );
+}}
+    </div>
+  );
 }
-
