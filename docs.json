@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Docs",
+  "title": "Your Educational Documentation Hub",
   "description": "Free comprehensive learning guides on AI and machine learning. Student-friendly notes, and practical examples for beginners.",
   "indexing": "all",
   "colors": {
