@@ -44,6 +44,13 @@
               "aifundamentals/module2/page3",
               "aifundamentals/module2/page4"
             ]
+          },
+          {
+            "group": "Deep Learning & Neural Networks",
+            "tag": "",
+            "pages": [
+              "aifundamentals/module3/page1"
+            ]
           }
         ]
       },
@@ -90,19 +97,19 @@
     "metatags": {
       "charset": "UTF-8",
       "viewport": "width=device-width, initial-scale=1.0",
-      "description": "Comprehensive educational documentation and tutorials for AI, Machine Learning. Learn the basics and fundamentals.",
-      "keywords": "education, documentation, learning, artificial intelligence, machine learning, python programming, ai tutorial, deep learning, python for beginners, programming education",
+      "description": "Comprehensive, student-friendly learning guides for **AI Fundamentals**, **Machine Learning Core Concepts**, and **Python**. Free notes and practical examples for beginners.",
+      "keywords": "artificial intelligence fundamentals, machine learning core concepts, python image classification, ai tutorial for beginners, deep learning notes, student learning, educational documentation, ayush singh ghatal",
       "author": "Ayush Singh Ghatal",
       "language": "en",
       "robots": "index, follow",
       "googlebot": "index, follow",
-      "theme-color": "#2563eb",
+      "theme-color": "#16A34A",
       "color-scheme": "light dark",
-      "og:title": "Your Educational Documentation Hub",
+      "og:title": "AI & ML Educational Documentation Hub | Free Beginner Guides",
       "og:type": "website",
       "og:url": "https://ayushsinghghatal.mintlify.app",
-      "og:image": "https://ayushsinghghatal.mintlify.app/favicon.jpg",
-      "og:description": "Master artificial intelligence, machine learning, python programming with our comprehensive documentation, tutorials, and learning resources.",
+      "og:image": "https://ayushsinghghatal.mintlify.app/og-image.jpg",
+      "og:description": "Master AI Fundamentals, Machine Learning, and Python programming with our free comprehensive documentation, tutorials, and beginner learning resources.",
       "og:site_name": "ayushsinghghatal",
       "og:locale": "en_US",
       "HandheldFriendly": "True",
@@ -111,8 +118,8 @@
       "apple-mobile-web-app-status-bar-style": "default",
       "apple-mobile-web-app-title": "ayushsinghghatal",
       "article:author": "Ayush Singh Ghatal",
-      "article:section": "Education",
-      "article:tag": "education, documentation, learning, tutorials",
+      "article:section": "Education, Artificial Intelligence, Machine Learning",
+      "article:tag": "education, documentation, learning, tutorials, ai fundamentals, machine learning",
       "google-site-verification": "yDS4Jm4BYKwXpYwobqeDZz8JRyzlnV4dGrx781Ycumw"
     }
   },
