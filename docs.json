@@ -10,14 +10,6 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "font": {
-    "headings": {
-      "family": "Poppins"
-    },
-    "body": {
-      "family": "Inter"
-    }
-  },
   "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
