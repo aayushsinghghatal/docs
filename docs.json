@@ -10,6 +10,9 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
+  "font" : {
+    "display" : "Unna"
+  },
   "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
