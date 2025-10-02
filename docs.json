@@ -36,6 +36,7 @@
           },
           {
             "group": "Core Concepts of ML",
+            "tag": "NEW",
             "pages": [
               "aifundamentals/module2/page1",
               "aifundamentals/module2/page2",
