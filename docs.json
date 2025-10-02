@@ -10,8 +10,15 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "font" : {
-    "display" : "Unna"
+  "font": {
+    "headings": {
+      "family": "Inter",
+      "weight": 700
+    },
+    "body": {
+      "family": "Playfair Display",
+      "weight": 400
+    }
   },
   "favicon": "/favicon.png",
   "navigation": {
