@@ -12,12 +12,10 @@
   },
   "font": {
     "headings": {
-      "family": "Inter",
-      "weight": 700
+      "family": "Poppins"
     },
     "body": {
-      "family": "Playfair Display",
-      "weight": 400
+      "family": "Inter"
     }
   },
   "favicon": "/favicon.png",
