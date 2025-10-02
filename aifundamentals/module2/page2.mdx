@@ -1,0 +1,58 @@
+---
+title: "Supervised Learning"
+---
+
+Welcome to the first major category of machine learning! Supervised learning is intuitive because it mimics how we often learn new things in real life: by studying examples with known answers.
+
+## The Core Idea: Learning with an Answer Key
+
+The "supervised" in supervised learning means that the data we use to train the model is **labeled**. Think of it as training data that comes with a built-in "answer key." The algorithm's job is to learn the relationship between the input data and the correct output labels.
+
+### **Analogy: Learning with Flashcards**
+
+Imagine you're teaching a toddler to identify different fruits using flashcards.
+
+1. You show them a picture of a banana (**the input data**).
+2. You say the word "banana" (**the label**).
+3. You repeat this process with pictures of apples, oranges, and grapes, each time providing the correct label.
+
+After showing them hundreds of these labeled flashcards, the toddler (the model) starts to learn the patterns—yellow and curved is a banana, red and round is an apple. Eventually, you can show them a picture of a new banana they've never seen before, and they can correctly identify it. That's the essence of supervised learning!
+
+## The Two Main Tasks of Supervised Learning
+
+Supervised learning problems can almost always be broken down into one of two categories: **Classification** or **Regression**. The difference is simply what you are trying to predict.
+
+_Drawing Suggestion:_ _Create a split diagram. On the left, an icon representing categories (like different colored shapes). Label it "Classification: Is this A or B?". On the right, an icon representing a continuous line graph or a number line. Label it "Regression: How much or How many?"._
+
+### 1. Classification: Predicting a Category
+
+In a classification task, the goal is to predict a discrete label. In other words, you're trying to put the input data into a specific category or class. The output is a label, not a number.
+
+**The key question is: "What class does this belong to?"**
+
+**Examples:**
+
+- **Spam Detection:** Is this email `spam` or `not spam`?
+- **Image Recognition:** Is this a picture of a `cat`, a `dog`, or a `bird`?
+- **Medical Diagnosis:** Does this patient's scan show a `malignant` or `benign` tumor?
+- **Sentiment Analysis:** Is this customer review `positive`, `negative`, or `neutral`?
+
+### 2. Regression: Predicting a Continuous Value
+
+In a regression task, the goal is to predict a continuous numerical value. You're not predicting a category, but a quantity.
+
+**The key question is: "How much?" or "How many?"**
+
+**Examples:**
+
+- **House Price Prediction:** Based on features like square footage, number of bedrooms, and location, what is the `price` of this house?
+- **Weather Forecasting:** What will the `temperature` be tomorrow?
+- **Stock Price Prediction:** What will be the `price` of a certain stock next week?
+- **Sales Forecasting:** How many `units` of a product will we sell next quarter?
+
+## Key Takeaways for Supervised Learning
+
+- It is **task-driven**; you are trying to predict a specific outcome.
+- It requires **labeled data** to train the model.
+- Use **Classification** for predicting categories (e.g., yes/no, red/green/blue).
+- Use **Regression** for predicting numbers (e.g., prices, temperatures, counts).

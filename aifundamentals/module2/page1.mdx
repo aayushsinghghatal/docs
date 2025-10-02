@@ -1,67 +1,35 @@
 ---
-title: "Types of Artificial Intelligence"
+title: "What is ML?"
 ---
 
-Not all AI is created equal. To understand the landscape of AI, it helps to categorize it based on what it's capable of and how it functions. We can break this down into two main classification systems.
+In the previous module, we learned that Machine Learning (ML) is a _subset_ of Artificial Intelligence. It's not just a part of AI; it's the engine that powers most of the AI advancements we see today. So, what exactly is it?
 
-## Classification 1: Based on Capability (The "Power Level")
+## The Core Idea: Learning From Data
 
-This is the most common way to think about AI, categorizing it by its level of intelligence, from highly specialized to vastly superhuman. Think of it like the evolution of a species or leveling up in a video game.
+The traditional way to make a computer do something is to give it explicit, step-by-step instructions. This is called **explicit programming**. For example, to write a program that calculates a 10% discount, you would write a rule like this: `final_price = original_price * 0.90`. The program can't do anything else; it just follows the rule you wrote.
 
-#### 1. Artificial Narrow Intelligence (ANI)
+### **Machine Learning flips this on its head.**
 
-Also known as "Weak AI," this is the **only type of AI that exists today.**
+Instead of giving the computer rules, you give it **data**. The ML algorithm then processes this data and "learns" the patterns and rules on its own.
 
-- **What it is:** ANI is an AI that is specialized for **one specific task**. It can be incredibly powerful at that single task, often exceeding human ability, but it cannot operate outside of its narrow programming.
-- **Think about:**
-  - Your phone's facial recognition. It's brilliant at identifying your face but can't use that knowledge to drive a car.
-  - A GPS navigation system. It's a genius at finding the best route but can't write an email.
-  - **AlphaGo**, the AI that defeated the world's best Go player. It's the undisputed champion of Go, but you can't ask it for the weather forecast.
+Arthur Samuel, an AI pioneer, defined it perfectly back in 1959: Machine Learning is the field of study that gives computers the ability to **learn without being explicitly programmed.**
 
-#### 2. Artificial General Intelligence (AGI)
+### **Analogy: Learning to Identify Animals**
 
-Also known as "Strong AI" or "Human-Level AI," this is the next major milestone for the field.
+- **Explicit Programming:** You could try to write a set of rules for a computer to identify a cat: "If it has pointy ears, AND whiskers, AND a long tail, AND fur... then it's a cat." This is brittle and will fail quickly. What about a cat with folded ears or no tail?
+- **Machine Learning:** You show the computer **thousands of pictures labeled "cat"** and **thousands of pictures labeled "not a cat."** The algorithm analyzes all these examples and learns the underlying patterns of what makes a cat a cat on its own. After this "training," it can accurately identify cats in new pictures it has never seen before. It learned the "rules" from the data, rather than being handed them.
 
-- **What it is:** AGI is an AI with the ability to understand, learn, and apply its intelligence to solve **any problem a human being can.** It would possess abstract thinking, background knowledge, and common sense.
-- **Think about:** This is the type of AI you see in science fiction, like Data from _Star Trek_ or the helpful droids in _Star Wars_. It's a machine with the generalized cognitive abilities of a human, not tied to a single task.
-- **Current Status:** AGI does **not** yet exist. It is the primary goal for many AI researchers, but creating it is an incredibly complex challenge.
+## The Typical Machine Learning Workflow
 
-#### 3. Artificial Superintelligence (ASI)
+While there are many different types of ML models, most projects follow a similar high-level process. Understanding this workflow is key to understanding how ML is applied in the real world.
 
-This is the final, theoretical stage of AI development.
+![Img4 Pn](/images/aifundamentals/img4.png)
 
-- **What it is:** ASI is an intellect that is much smarter than the best human minds in virtually every field, including scientific creativity, general wisdom, and social skills.
-- **Think about:** An ASI wouldn't just be a faster thinker; it would be a _better_ thinker, capable of making discoveries and inventions far beyond our comprehension. Its rise would be one of the most transformative events in human history.
-- **Current Status:** ASI is purely **hypothetical**.
-
-## Classification 2: Based on Functionality (The "How it Thinks" Model)
-
-This system categorizes AI based on its ability to perceive the world and use that information.
-
-#### 1. Reactive Machines
-
-This is the most basic form of AI.
-
-- **How it works:** It perceives the world directly and acts on what it sees. It doesn't have a memory of the past, so it can't use past experiences to inform current decisions. It performs the same way every time it encounters the same situation.
-- **Example:** **IBM's Deep Blue**, the chess computer that beat Garry Kasparov. Deep Blue could identify the pieces on the board and calculate the best possible move from all the options, but it didn't "remember" any moves from past games. Its strategy was purely based on the present moment.
-
-#### 2. Limited Memory
-
-This is where most of today's AI applications are.
-
-- **How it works:** This AI can store past data and predictions for a short period. It uses this recent past to inform its decisions in the immediate future. The "memory" is not saved into a library of experiences that it can learn from later.
-- **Example:** A **self-driving car**. It observes the speed and direction of other cars, reads lane markings, and tracks traffic lights. This information about the recent past is critical for deciding when to change lanes or brake. Once the car has moved on, that specific memory is no longer needed.
-
-#### 3. Theory of Mind (Future Goal)
-
-This is the next level of AI systems that researchers are working on.
-
-- **How it would work:** This AI would have social intelligence. It could understand that people, creatures, and objects in the world have thoughts, feelings, and intentions that affect their own behavior.
-- **Example:** A truly helpful home assistant robot would need to understand _why_ you're asking for something. It would need to interpret your tone of voice and facial expressions to grasp your emotional state and intentions.
-
-#### 4. Self-Awareness (Hypothetical)
-
-This is the final stage of AI development and the stuff of science fiction.
-
-- **How it would work:** An AI that has achieved this stage would have its own consciousness, a sense of self, and an awareness of its own internal state. It would be a sentient being.
-- **Example:** Fictional characters like Skynet from _The Terminator_ or HAL 9000 from _2001: A Space Odyssey_ represent this idea of a self-aware, conscious AI. This is a purely theoretical concept for now.
+1. **Data Collection:** This is the foundation of any ML project. You need to gather large amounts of relevant, high-quality data. The data could be anything from spreadsheets and images to text and sensor readings. The quality and quantity of this data will directly impact the performance of your model.
+2. **Data Preparation (or "Data Preprocessing"):** Raw data is almost never ready to be used. This is often the most time-consuming step. It involves:
+   - **Cleaning:** Fixing errors, handling missing values.
+   - **Formatting:** Ensuring the data is in a consistent and usable format.
+   - **Splitting:** Dividing the data into a "training set" (for the model to learn from) and a "testing set" (to evaluate its performance later).
+3. **Model Training:** This is where the "learning" happens. You select an appropriate ML algorithm (like the ones we'll discuss in the next sections) and feed it your prepared training data. The algorithm processes the data, adjusts its internal parameters, and creates a "model"—a mathematical representation of the patterns it found.
+4. **Evaluation:** Once the model is trained, you need to see how well it works. You use the "testing set" (which the model has never seen before) to check its accuracy and performance. This step answers the question: "Did the model actually learn the right things, and can it make accurate predictions on new data?"
+5. **Deployment & Monitoring:** If the model's performance is good, it's ready to be put into a real-world application. This is called **deployment**. For example, a spam detection model would be integrated into an email service. The work isn't over, though. You need to continuously **monitor** the model's performance to ensure it remains accurate over time as new data comes in.
