@@ -10,6 +10,11 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
+  "fonts": {
+    "body": {
+      "family": "Playfair Display"
+    }
+  },
   "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
@@ -37,7 +42,6 @@
           },
           {
             "group": "Core Concepts of ML",
-            "tag": "NEW",
             "pages": [
               "aifundamentals/module2/page1",
               "aifundamentals/module2/page2",
@@ -47,7 +51,7 @@
           },
           {
             "group": "Deep Learning & Neural Networks",
-            "tag": "",
+            "tag": "NEW",
             "pages": [
               "aifundamentals/module3/page1"
             ]
