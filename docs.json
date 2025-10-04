@@ -10,11 +10,6 @@
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "fonts": {
-    "body": {
-      "family": "Crimson Pro"
-    }
-  },
   "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
