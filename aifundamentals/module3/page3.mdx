@@ -1,0 +1,47 @@
+---
+title: "Common Deep Learning Architectures"
+---
+
+While the fully-connected neural networks we've discussed are powerful, they aren't always the most efficient design for specific types of data. Over time, researchers developed specialized network architectures optimized for particular tasks.
+
+Let's explore two of the most influential and common architectures: Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs).
+
+_You can structure this section using interactive tabs in MDX, allowing users to toggle between CNNs and RNNs._
+
+## Convolutional Neural Networks (CNNs)
+
+**Best for:** Image and video data (2D or 3D grids of data).
+
+CNNs are the workhorses of computer vision. They are specifically designed to recognize patterns in spatial data, like the pixels in an image. Instead of looking at every pixel individually, CNNs look at images through a series of "filters" or "kernels."
+
+### **How It Works: The Core Idea**
+
+Imagine you have a magnifying glass that can only see a small 3x3 pixel square. You slide this magnifying glass across an entire image, one patch at a time. This sliding filter is called a **convolution**.
+
+Each filter is designed to detect a specific feature, like a horizontal edge, a vertical edge, a specific color, or a curve.
+
+1. **Convolution Layers:** These layers apply multiple filters to the input image, creating "feature maps" that highlight where those specific features were detected.
+2. **Pooling Layers:** After detecting features, these layers downsample the feature maps, making them smaller and more manageable. This process retains the most important information while reducing computational load. It's like creating a lower-resolution summary of the important features.
+3. **Fully-Connected Layers:** Finally, after several convolution and pooling layers have extracted and summarized the key features, the output is fed into a standard fully-connected network (like we've already learned about) to perform the final classification (e.g., "this is a cat").
+
+**Analogy:** A CNN is like a team of highly specialized art detectives. The first detective only looks for straight lines, the second only for circles, the third for the color red, and so on. They each scan the painting and make a report. A manager then takes all these reports to make a final conclusion about what the painting depicts.
+
+_Drawing Suggestion:_ _Create a visual flow showing an input image of a car. An arrow points to a "Convolution Layer" showing a grid filter sliding over the image. The next arrow points to a "Feature Map" highlighting the car's wheels. Another arrow points to a "Pooling Layer" showing a smaller, summarized version of the wheel features. The final arrow points to the output text: "Car"._
+
+## Recurrent Neural Networks (RNNs)
+
+**Best for:** Sequential data (text, time-series data, audio).
+
+Humans don't read one word at a time in isolation; we understand each word based on the words that came before it. RNNs are designed to mimic this ability by having a form of "memory." They process data step-by-step, and at each step, they incorporate information from the previous steps.
+
+### **How It Works: The Core Idea**
+
+An RNN has a **loop**. When it processes an element in a sequence (like a word in a sentence), it produces an output and also sends a "hidden state" or "memory" of that element to the next step. This hidden state influences how the network processes the _next_ element in the sequence.
+
+This allows the network to remember context. For example, when it sees the word "bank" in a sentence, its memory of previous words like "river" or "money" will help it understand the correct meaning.
+
+**The Challenge:** Standard RNNs can struggle with "long-term memory." They might forget the context from the beginning of a long paragraph by the time they reach the end. More advanced versions like **LSTMs (Long Short-Term Memory networks)** were created to solve this very problem.
+
+**Analogy:** An RNN is like reading a novel. You don't just understand the current page; you remember the characters and plot points from all the previous chapters. That memory gives context to everything you're currently reading.
+
+_Drawing Suggestion:_ _Show a series of boxes connected by arrows to represent a sequence. Box 1 ("The") has an arrow pointing to Box 2 ("cat"). But crucially, there's also a loop arrow coming out of Box 1 and feeding into the processing of Box 2. This visualizes the passing of memory or context._
