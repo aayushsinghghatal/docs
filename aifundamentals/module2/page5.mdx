@@ -6,8 +6,6 @@ Before we dive deep into complex neural networks, it's essential to understand s
 
 Let's explore three of the most common: Linear Regression, Logistic Regression, and Decision Trees.
 
-_You can structure this section using interactive tabs in MDX to keep the content organized and engaging._
-
 ## Linear Regression
 
 **Best for:** Predicting a continuous numerical value (e.g., price, temperature, sales).
@@ -19,8 +17,6 @@ Linear Regression is one of the simplest and most widely used regression algorit
 Given a set of data points on a graph, Linear Regression calculates the ideal slope and intercept for a line that passes as closely as possible to all the points. This line, often called the "line of best fit," represents the learned relationship. Once the model finds this line, it can predict the output value for new, unseen input data by finding where that input falls on the line.
 
 **Analogy:** Imagine you're in a science class plotting temperature vs. ice cream sales on a scatter plot. You notice the points seem to form an upward trend. You take a ruler and draw a straight line that best summarizes this trend. That's exactly what Linear Regression does automatically. You can now use your line to predict how many ice creams you might sell at a temperature you haven't measured before.
-
-_Drawing Suggestion:_ _Draw a simple 2D graph with X and Y axes. Scatter a few dots on the graph that show a clear linear trend (e.g., as X increases, Y increases). Then, draw a single straight line passing through the middle of these points. Label the axes "House Size" (X) and "Price" (Y)._
 
 ## Logistic Regression
 
@@ -34,8 +30,6 @@ Logistic Regression works by fitting the data to a special S-shaped curve, known
 
 **Analogy:** Think of a light dimmer switch that is stuck. It can only be fully ON or fully OFF. Logistic Regression is like the mechanism that decides whether to flip the switch. It looks at various factors (the inputs) and calculates the probability that the switch should be ON. If the probability is high enough, it flips the switch.
 
-_Drawing Suggestion:_ _Draw a 2D graph. On the left side, at low X-values, draw a cluster of 'O's. On the right side, at high X-values, draw a cluster of 'X's. Then, draw a smooth S-shaped curve that starts near Y=0 on the left, rises sharply in the middle, and flattens out near Y=1 on the right, neatly separating the two clusters._
-
 ## Decision Trees
 
 **Best for:** Both classification and regression tasks where the decision-making process needs to be easily understood.
@@ -47,5 +41,3 @@ A Decision Tree is a versatile and highly interpretable algorithm that makes pre
 The model builds a tree-like structure. It starts at the top (the "root") with a single question about a feature (e.g., "Is the email sender in my contact list?"). Based on the answer (Yes/No), you follow a specific branch. Each branch leads to another question (another "node") that further splits the data. This continues until you reach a "leaf" node, which provides the final prediction (e.g., "Spam" or "Not Spam").
 
 **Analogy:** A Decision Tree works exactly like a game of "20 Questions" or a flowchart. You start with a broad question and your next question is determined by the answer to the previous one, progressively narrowing down the possibilities until you arrive at the correct answer.
-
-_Drawing Suggestion:_ _Create a simple flowchart. Start with a root node at the top labeled "Loan Applicant." Draw two branches coming down: "Salary \> \$50k?" (Yes/No). The "No" branch leads to a leaf node labeled "Deny." The "Yes" branch leads to another decision node: "Credit Score \> 650?" (Yes/No). These branches lead to final leaf nodes labeled "Approve" or "Deny."_

@@ -37,18 +37,22 @@
           },
           {
             "group": "Core Concepts of ML",
+            "tag": "UPDATED",
             "pages": [
               "aifundamentals/module2/page1",
               "aifundamentals/module2/page2",
               "aifundamentals/module2/page3",
-              "aifundamentals/module2/page4"
+              "aifundamentals/module2/page4",
+              "aifundamentals/module2/page5"
             ]
           },
           {
             "group": "Deep Learning & Neural Networks",
             "tag": "NEW",
             "pages": [
-              "aifundamentals/module3/page1"
+              "aifundamentals/module3/page1",
+              "aifundamentals/module3/page2",
+              "aifundamentals/module3/page3"
             ]
           }
         ]

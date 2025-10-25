@@ -26,8 +26,6 @@ Each filter is designed to detect a specific feature, like a horizontal edge, a 
 
 **Analogy:** A CNN is like a team of highly specialized art detectives. The first detective only looks for straight lines, the second only for circles, the third for the color red, and so on. They each scan the painting and make a report. A manager then takes all these reports to make a final conclusion about what the painting depicts.
 
-_Drawing Suggestion:_ _Create a visual flow showing an input image of a car. An arrow points to a "Convolution Layer" showing a grid filter sliding over the image. The next arrow points to a "Feature Map" highlighting the car's wheels. Another arrow points to a "Pooling Layer" showing a smaller, summarized version of the wheel features. The final arrow points to the output text: "Car"._
-
 ## Recurrent Neural Networks (RNNs)
 
 **Best for:** Sequential data (text, time-series data, audio).
@@ -43,5 +41,3 @@ This allows the network to remember context. For example, when it sees the word 
 **The Challenge:** Standard RNNs can struggle with "long-term memory." They might forget the context from the beginning of a long paragraph by the time they reach the end. More advanced versions like **LSTMs (Long Short-Term Memory networks)** were created to solve this very problem.
 
 **Analogy:** An RNN is like reading a novel. You don't just understand the current page; you remember the characters and plot points from all the previous chapters. That memory gives context to everything you're currently reading.
-
-_Drawing Suggestion:_ _Show a series of boxes connected by arrows to represent a sequence. Box 1 ("The") has an arrow pointing to Box 2 ("cat"). But crucially, there's also a loop arrow coming out of Box 1 and feeding into the processing of Box 2. This visualizes the passing of memory or context._

@@ -1,3 +1,45 @@
 ---
 title: "Introduction to Neural Networks"
 ---
+
+So far, we've explored machine learning models that are powerful but can be limited when it comes to highly complex, unstructured data like images, audio, and raw text. To tackle these challenges, researchers looked to the most powerful learning machine known: the human brain.
+
+This inspiration led to the creation of **Artificial Neural Networks (ANNs)**, the foundational models of Deep Learning.
+
+### Inspired by the Human Brain
+
+At a very high level, ANNs are designed to mimic the way biological neurons signal to one another.
+
+- **The Brain:** Your brain has billions of cells called neurons, all interconnected in a vast network. They receive signals, process them, and pass them on to other neurons. This collective activity is how you think, learn, and recognize patterns.
+- **The ANN:** An Artificial Neural Network creates a simplified model of this. It uses interconnected computational units called **artificial neurons** (or **nodes**) organized in layers. By working together, these simple units can learn to recognize incredibly complex patterns from data.
+
+It's important to remember this is just an _inspiration_, not a direct copy. An ANN is a mathematical model, but the brain analogy is a useful way to understand its core structure.
+
+### The Structure of a Neural Network
+
+A neural network is built from a few key components, organized into a specific architecture.
+
+1. **Neurons (Nodes):** The most basic unit. Each neuron receives input signals, performs a small calculation, and then passes an output signal to other neurons.
+2. **Layers:** Neurons are organized into layers.
+   - **Input Layer:** The first layer that receives the raw data (e.g., the pixels of an image).
+   - **Hidden Layers:** The layers in the middle where all the complex computation happens. A network can have one or many hidden layers.
+   - **Output Layer:** The final layer that produces the result (e.g., the label "cat" or "dog").
+3. **Weights & Biases:** Each connection between neurons has a **weight**. This number represents the strength or importance of that connection. The network "learns" by adjusting these weights. A **bias** is an extra value added to a neuron that helps shift its output, making the model more flexible.
+
+### How They "Learn": An Introduction to Training
+
+When a neural network is first created, all its weights and biases are set to random values. It knows nothing. The process of teaching it is called **training**.
+
+The core idea is simple:
+
+1. Show the network an example from the data (e.g., a picture of a cat).
+2. Let it make a guess (e.g., it might guess "dog").
+3. Measure how wrong its guess was (this is called the **loss** or **error**).
+4. Slightly adjust all the weights and biases in the network to make it a little less wrong next time.
+
+This adjustment process is done using two key mathematical techniques:
+
+- **Gradient Descent:** An algorithm that finds the best way to adjust the weights to minimize the error.
+- **Backpropagation:** The method used to efficiently calculate the error contribution of each individual weight, even in very deep networks.
+
+We will explore these concepts in much more detail in the upcoming modules. For now, the key takeaway is that a neural network learns by repeatedly guessing, checking its error, and making small corrections.
