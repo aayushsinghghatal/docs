@@ -54,6 +54,13 @@
               "aifundamentals/module3/page2",
               "aifundamentals/module3/page3"
             ]
+          },
+          {
+            "group": "Key Domains of AI",
+            "tag": "NEW",
+            "pages": [
+              "aifundamentals/module4/page1"
+            ]
           }
         ]
       },
